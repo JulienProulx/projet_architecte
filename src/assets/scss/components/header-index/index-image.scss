@@ -1,0 +1,88 @@
+// Image du montage page d'accueil
+//----------------------------------
+
+//-------------------------------
+// Structure du conteneur de l'image
+//--------------------------------
+
+header#header-index div.montage{
+    @include setFlex(column, center, center);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    @include resetBox;
+
+    @include breakpoint-min(992){
+        display: block;
+        bottom: 192px;
+        right: 0;
+        height: 210px;
+        width: 520px;
+        background-color: var(--blanc);
+    }
+
+    @include breakpoint-min(1200){
+        height: 288px;
+        width: 632px;
+    }
+
+    @include breakpoint-min(1400){
+        height: 416px;
+        width: 800px;
+    }
+
+    @include breakpoint-min(1800){
+        height: 544px;
+        bottom: 148px;
+        width: 1120px;
+    }
+
+    &::after{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 56px;
+        padding-inline-start: 0;
+        content: "";
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        background-color: var(--bleu);
+
+        @include breakpoint-min(992){
+            display: none;
+        }
+    }
+}
+
+header#header-index div.montage{
+    & img{
+        width: 80%;
+        position: absolute;
+        bottom: 36px;
+        z-index: 10;
+
+        @include breakpoint-min(768){
+            bottom: 20px;
+        }
+        @include breakpoint-min(992){
+            width: 544px;
+            left: -64px;
+        }
+
+        @include breakpoint-min(1200){
+            width: 672px;
+        }
+
+        @include breakpoint-min(1400){
+            width: 864px;
+            left: -86px;
+        }
+
+        @include breakpoint-min(1800){
+            width: 1270px;
+            left: -186px;
+        }
+    }
+
+}

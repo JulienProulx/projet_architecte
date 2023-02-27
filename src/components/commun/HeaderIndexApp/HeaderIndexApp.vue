@@ -1,9 +1,17 @@
-<script setup></script>
+<script setup>
+    import IndexSignature from "@/components/commun/HeaderIndexApp/IndexSignature.vue"
+    import ImageIndex from "@/components/commun/HeaderIndexApp/ImageIndex.vue"
+</script>
+
 
 <template>
     <main>
-        <header>
-            <h3>Header</h3>
+        <header id="header-index">
+           <div class="header-contenu">  </div> 
+           
+            <IndexSignature />
+            <ImageIndex/>
+           <div class="header-col-fix"></div>
         </header>
     </main>
 </template>
