@@ -1,11 +1,15 @@
-<script setup></script>
+<script setup>
+import HeaderIndexApp from '@/components/commun/HeaderIndexApp/HeaderIndexApp.vue';
+
+</script>
 
 <template>
+    <div class="interface">
+    <HeaderIndexApp />
     <main>
-        <header>
-            <h2>Page d'accueil</h2>
-        </header>
+      <h2>Contenu index</h2>
     </main>
+    </div>
 </template>
 
 <style>
